@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CodingChallenge.PirateSpeak
 {
@@ -6,7 +6,11 @@ namespace CodingChallenge.PirateSpeak
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(new Solution().GetPossibleWords("boop", new [] {"oops","poo","boo","noop"}));
+            var results = new Solution().GetPossibleWords("boop", new[] { "oops", "poo", "boo", "noop", "bpoo" });
+            foreach (var word in results)
+            {
+                Console.WriteLine(word);
+            }
         }
     }
 }
